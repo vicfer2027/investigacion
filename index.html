@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Mi Presentación con Audio</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <!-- Puedes cambiar 'black.css' por 'white.css', 'league.css', 'beige.css', etc. -->
+    <link rel="stylesheet" href="dist/theme/black.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- DIAPOSITIVA 1: Bienvenida e Interacción (Crucial para audio en móviles) -->
+        <section>
+          <h2>Bienvenidos</h2>
+          <p>Toca la pantalla o presiona la flecha para comenzar la presentación con audio.</p>
+        </section>
+
+        <!-- DIAPOSITIVA 2: Primera diapositiva con narración -->
+        <section>
+          <h2>¿Qué es Reveal.js?</h2>
+          <p>Es un framework para crear hermosas diapositivas en HTML.</p>
+		  <img src="graficos/grafico1" alt="redaccion">
+          <!-- El audio se reproduce solo al entrar aquí -->
+          <audio data-autoplay src="audio/audio1.mp3"></audio>
+        </section>
+
+        <!-- DIAPOSITIVA 3: Segunda diapositiva con narración -->
+        <section>
+          <h2>Compatibilidad Total</h2>
+          <p>Funciona de manera excelente en computadoras y smartphones.</p>
+		   <img src="graficos/grafico2" alt="redaccion2">
+          <audio data-autoplay src="audio/audio1.mp3"></audio>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      // Inicializar Reveal.js
+      Reveal.initialize({
+        hash: true,
+        // Forzar la reproducción automática de contenido multimedia
+        autoPlayMedia: true 
+      });
+    </script>
+  </body>
+</html>
